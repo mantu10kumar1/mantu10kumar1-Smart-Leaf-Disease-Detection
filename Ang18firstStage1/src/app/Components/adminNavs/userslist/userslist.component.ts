@@ -70,10 +70,11 @@ async loadUsers() {
     this.router.navigate(['/update', userId]);
   }
   showError(message: string) {
-    this.errorMessage = message;
+    // this.errorMessage = message;
+    this.errorMessage = 'Failed your connection during the fetching users...';
     setTimeout(() => {
       this.errorMessage = ''; // Clear the error message after the specified duration
-    }, 3000);
+    }, 5000);
   }
 
 

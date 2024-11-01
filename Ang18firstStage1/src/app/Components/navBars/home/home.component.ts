@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  image1:string='https://images.wallpaperscraft.com/image/single/fern_plant_leaves_139338_3840x2400.jpg';
+  
  // Write a logic , when the once the component is loaded a reload only for once time and then stop program execute automatically
  constructor() {
   console.log("isReloaded above of the if : " , localStorage.getItem('isReloaded'));

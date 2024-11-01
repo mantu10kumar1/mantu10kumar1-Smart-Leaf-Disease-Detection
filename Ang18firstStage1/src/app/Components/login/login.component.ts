@@ -54,7 +54,9 @@ export class LoginComponent {
   }
 
   showError(mess: string) {
-    this.errorMessage = mess;
+    // this.errorMessage = mess;
+    this.errorMessage = 'Failed your connection during the login operation...';
+
     setTimeout(() => {
       this.errorMessage = ''
     }, 3000)
